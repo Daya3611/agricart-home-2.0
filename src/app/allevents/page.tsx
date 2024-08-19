@@ -3,7 +3,7 @@
 import { X } from 'lucide-react';
 import React, { useState } from 'react';
 
-// Define image URLs and details
+// Define image URLs and detailsdddd
 const events = [
   {
     img: './img/events/e1.jpg',
