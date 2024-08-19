@@ -171,9 +171,9 @@ const events = [
   
 ];
 
-const page = () => {
+const Page = () => {
   const [popupData, setPopupData] = useState<{ img: string; name: string; description: string } | null>(null);
-
+  
   const openPopup = (event: { img: string; name: string; description: string }) => setPopupData(event);
   const closePopup = () => setPopupData(null);
 
@@ -230,4 +230,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
