@@ -9,10 +9,10 @@ import {
 
 // Define the image URLs in a constant array
 const imageUrls = [
-    'https://agricartfpc.com/assets/img/slider/5.jpg',
-    'https://agricartfpc.com/assets/img/slider/4.jpg',
-    'https://agricartfpc.com/assets/img/slider/3.jpg',
-    'https://agricartfpc.com/assets/img/slider/2.jpg',
+    './img/slider/5.jpg',
+    './img/slider/4.jpg',
+    './img/slider/3.jpg',
+    './img/slider/2.jpg',
 ];
 
 const Slider = () => {
@@ -59,10 +59,10 @@ export default Slider;
 
 // // Define the image URLs in a constant array
 // const imageUrls = [
-//     'https://agricartfpc.com/assets/img/slider/5.jpg',
-//     'https://agricartfpc.com/assets/img/slider/1.jpg',
-//     'https://agricartfpc.com/assets/img/slider/2.jpg',
-//     'https://agricartfpc.com/assets/img/slider/3.jpg',
+//     './img/slider/5.jpg',
+//     './img/slider/1.jpg',
+//     './img/slider/2.jpg',
+//     './img/slider/3.jpg',
 // ];
 
 // const Slider = () => {

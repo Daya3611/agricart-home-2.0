@@ -8,7 +8,7 @@ function Hero() {
         
         {/* Logo Image */}
         <div className="flex justify-center md:justify-start">
-          <img src="https://agricartfpc.com/assets/img/logo.png" alt="Logo" className="w-100 md:w-100" />
+          <img src="./img/logo.png" alt="Logo" className="w-100 md:w-100" />
         </div>
 
         {/* Main Content */}
@@ -26,7 +26,7 @@ function Hero() {
             </strong>
             
             <br />
-            <img src="https://agricartfpc.com/assets/img/slogen.png" alt="Slogan" className="mx-auto md:mx-0 w-[250px]  mt-2 sm:w-full md:w-[350px]" />
+            <img src="./img/slogen.png" alt="Slogan" className="mx-auto md:mx-0 w-[250px]  mt-2 sm:w-full md:w-[350px]" />
           </h1>
 
           {/* Description */}
