@@ -2,9 +2,9 @@ import React from 'react'
 
 function page() {
   return (
-    <div className="p-6 bg-white mt-[60px]">
+    <div className="p-6 bg-white mt-[60px] ">
       <div className="bg-gray-50 shadow-lg rounded-3xl p-6">
-        <h1 className="text-2xl font-bold mb-4">About Us</h1>
+        <h1 className="text-2xl font-bold mb-4 border-b-4 border-teal-500 pb-2">About Us</h1>
         <p className="mb-4 text-justify">
           Agricart Farmers Producer Company Limited ®, registered in 2019, is working with 500 farmers and traditional seed savers in District Sindhudurg of State Maharashtra. The prime motive of the Farmer Organisation is to conserve traditional seeds, farm practices, recipes, and other traditional knowledge through public participation in a sustainable way. The organisation ensures direct monetary benefits to the farmers, encouraging them to conserve their precious traditional knowledge.
           <br /><br />
@@ -14,8 +14,8 @@ function page() {
           <br /><br />
           We value the contribution of our members and consumers towards indigenous agro-biodiversity conservation by sharing 95% of the company’s profit with our ever-growing conservator and producer farmer members.
         </p>
-        <hr className="my-6 border-gray-300 " />
-        <h1 className="text-2xl  font-bold mb-4">COMPANY PROFILE</h1>
+        <hr className="my-6 border-white" />
+        <h1 className="text-2xl  font-bold mb-4 border-b-4 border-teal-500 pb-2">COMPANY PROFILE</h1>
         <table className="w-full mb-4 text-[12px] sm:text-[13px] md:text-[15px]">
           <tbody>
             <tr className='border'>
