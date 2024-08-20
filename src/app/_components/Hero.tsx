@@ -42,7 +42,7 @@ function Hero() {
         </div>
 
         {/* Social Links */}
-        <div className="text-center md:text-right space-y-4">
+        {/* <div className="text-center md:text-right space-y-4">
           <span className="block text-gray-800 font-semibold">Follow Us</span>
           <div className="flex justify-center md:justify-end space-x-4">
             <a href="https://www.facebook.com/profile.php?id=100083819993056&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
@@ -55,7 +55,7 @@ function Hero() {
               <i className="ri-youtube-fill text-2xl"><Youtube/></i>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

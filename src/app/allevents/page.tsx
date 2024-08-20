@@ -178,8 +178,8 @@ const Page = () => {
   const closePopup = () => setPopupData(null);
 
   return (
-    <section className="container mx-auto px-4 py-8">
-      <h1 className="text-5xl font-bold text-center mb-6 ">Our Gallery</h1>
+    <section className="container mx-auto px-4 py-8 mt-10">
+      <h1 className="text-5xl font-bold text-center mb-6 sm:text-2xl md:text-3xl">Our Gallery</h1>
 
       <div className="grid grid-cols-1  lg:grid-cols-4 gap-4 mb-6 mt-3">
         {events.map((event, index) => (

@@ -13,9 +13,9 @@ import { HammerIcon, MenuIcon } from 'lucide-react'
 
 function Header() {
   return (
-    <div className='flex justify-between py-4 px-[50px] '>
+    <div className='flex justify-between py-4 px-[50px] z-50 fixed top-0 left-0 right-0 bg-white shadow-md'>
 
-      <h2 className='text-3xl font-bold z-50'>Agricat .</h2>
+      <h2 className='text-3xl font-bold '>Agricat .</h2>
 
       <Sheet>
         <SheetTrigger><MenuIcon className='font-bold'/></SheetTrigger>
