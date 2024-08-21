@@ -46,73 +46,73 @@ function NavbarItem() {
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2  className='flex gap-3 ">
                       <div className="text-lg bg-gray-100 rounded-lg">
-                        <div className=' hover:bg-green-300 rounded-lg p-2 '>
+                        <div className=' hover:bg-green-600 rounded-lg p-2 '>
                         <a href='/introduction' className="flex gap-2">
                           
                          <h2 className='text-md text-black hover:text-green-600'>Introduction</h2>  
                         </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                         <a href='/about' className="flex gap-2">
                           
                          <h2 className='text-md text-black hover:text-green-600'>About</h2>  
                         </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='/bod' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>BOD</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Logo</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Brand</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='/staff' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Staff</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Awards</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Anual Reports</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>R & D</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='/projects' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Projects</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Supports</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Enviroment</h2>  
@@ -147,19 +147,19 @@ function NavbarItem() {
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2  className='flex gap-3 ">
                       <div className="text-lg bg-gray-100 rounded-lg">
-                        <div className=' hover:bg-green-300 rounded-lg p-2 '>
+                        <div className=' hover:bg-green-600 rounded-lg p-2 '>
                         <a href='' className="flex gap-2">
                           
                          <h2 className='text-md text-black hover:text-green-600'>Companies</h2>  
                         </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                         <a href='' className="flex gap-2">
                           
                          <h2 className='text-md text-black hover:text-green-600'>Organisations</h2>  
                         </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Individuals</h2>  
@@ -182,37 +182,37 @@ function NavbarItem() {
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2  className='flex gap-3 ">
                       <div className="text-lg bg-gray-100 rounded-lg">
-                        <div className=' hover:bg-green-300 rounded-lg p-2 '>
+                        <div className=' hover:bg-green-600 rounded-lg p-2 '>
                         <a href='' className="flex gap-2">
                           
                          <h2 className='text-md text-black hover:text-green-600'>Facility</h2>  
                         </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                         <a href='' className="flex gap-2">
                           
                          <h2 className='text-md text-black hover:text-green-600'>Plan</h2>  
                         </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Become a member</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Agricultural information</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Weather</h2>  
                           </a>
                         </div>
-                        <div className=' hover:bg-green-300 rounded-lg p-2'>
+                        <div className=' hover:bg-green-600 rounded-lg p-2'>
                           <a href='' className="flex gap-2">
                             
                             <h2 className='text-md text-black hover:text-green-600'>Innovator Farmers</h2>  
