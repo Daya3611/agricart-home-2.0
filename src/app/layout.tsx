@@ -7,7 +7,7 @@ import Footer from "./_components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Agricart Shop",
+  title: "Agricart",
   description: "Agricart Farmers Producer Company Limited",
 };
 
