@@ -4,16 +4,14 @@ function page() {
   return (
     <div className="p-6 bg-white mt-[60px] ">
       <div className="bg-gray-50 shadow-lg rounded-3xl p-6">
-        <h1 className="text-2xl font-bold mb-4 border-b-4 border-teal-500 pb-2">About Us</h1>
-        <p className="mb-4 text-justify">
-          Agricart Farmers Producer Company Limited ®, registered in 2019, is working with 500 farmers and traditional seed savers in District Sindhudurg of State Maharashtra. The prime motive of the Farmer Organisation is to conserve traditional seeds, farm practices, recipes, and other traditional knowledge through public participation in a sustainable way. The organisation ensures direct monetary benefits to the farmers, encouraging them to conserve their precious traditional knowledge.
-          <br /><br />
-          The conceptualization and execution of the idea of this company were part of two independent projects. In 2018, Mr. Sachin Chorge and his fellow farmers were working on the Maharashtra Gene Bank project under the guidance of Sanjay Patil of BAIF Institute, Pune, and Vasundhara Science Centre, Nerurpar. Through this project, 40 traditional rice varieties and 26 other crops and vegetable seeds of Sindhudurg were collected and conserved. Another project was started at the same time by NABARD and Lupin Foundation to help set up farmer producer organizations in Sindhudurg. LUPIN Foundation was already working with these farmers on different agricultural projects and decided to involve them in the Producer Company. AGRICART FPC came into existence in 2018, and the work of conservation & livelihood generation was supported with financial capacity. Since then, the company has been growing its business in local food, articles, and services along with its local crop variety conservation mission.
-          <br /><br />
-          The Maharashtra Gene Bank project conceptualized and being implemented in various agro-climatic zones of Maharashtra focuses on the conservation and management of bio-resources with community participation. In Sindhudurg, varieties of rice, millet, beans, local vegetables, tubers, and wild edible plant species were collected and conserved. More than 75 indigenous crop landraces (including 40 indigenous rice cultivars) were focused on efforts for conservation, purification, and promotion of rice crop cultivars by establishing in situ conservation centres at farmers fields. The project reached up to 152 farmers for the production of selected rice cultivars like Walay and Sorti on about 36 acres.
-          <br /><br />
-          We value the contribution of our members and consumers towards indigenous agro-biodiversity conservation by sharing 95% of the company’s profit with our ever-growing conservator and producer farmer members.
-        </p>
+      <h1 className="text-2xl font-bold mb-4 border-b-4 border-teal-500 pb-2">About Us</h1>
+          <p className="mb-4 text-justify">
+            Agricart Farmers Producer Company Limited &reg;, registered in 2019, is working with 500 farmers and traditional seed savers in District Sindhudurg of State Maharashtra. The prime motive of the Farmer Organisation is to conserve traditional seeds, farm practices, recipes, and other traditional knowledge through public participation in a sustainable way. The organisation ensures direct monetary benefits to the farmers, encouraging them to conserve their precious traditional knowledge.
+            <br /><br />
+            The conceptualization and execution of the idea of this company were part of two independent projects. In 2018, Mr. Sachin Chorge and his fellow farmers were working on the Maharashtra Gene Bank project under the guidance of Sanjay Patil of BAIF Institute, Pune, and Vasundhara Science Centre, Nerurpar. Through this project, 40 traditional rice varieties and 26 other crops and vegetable seeds of Sindhudurg were collected and conserved. Another project was started at the same time by NABARD and Lupin Foundation to help set up farmer producer organizations in Sindhudurg. LUPIN Foundation was already working with these farmers on different agricultural projects and decided to involve them in the Producer Company. AGRICART FPC came into existence in 2018, and the work of conservation &amp; livelihood generation was supported with financial capacity. Since then, the company has been growing its business in local food, articles, and services along with its local crop variety conservation mission.
+            <br /><br />
+            The Maharashtra Gene Bank project conceptualized and being implemented in various agro-climatic zones of 
+          </p>
         <hr className="my-6 border-white" />
         <h1 className="text-2xl  font-bold mb-4 border-b-4 border-teal-500 pb-2">COMPANY PROFILE</h1>
         <table className="w-full mb-4 text-[12px] sm:text-[13px] md:text-[15px]">
