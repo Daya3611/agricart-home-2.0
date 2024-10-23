@@ -25,7 +25,7 @@ export default function RootLayout({
       {/* <Header/>
         {children}
       <Footer/> */}
-        <h1 className="text-center">"This site is temporarily unavailable. Please check back later."</h1>
+        <h1 className="text-center">This site is temporarily unavailable. Please check back later.</h1>
       </body>
     </html>
   );
