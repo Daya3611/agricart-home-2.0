@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const director = [
+const director = [
         { name: "Shri. Santosh Ankush Gawade", role: "Chairman", imgSrc: "./img/people/p1.png", linkedin: "#" },
         { name: "Shri. Vinod Shivram Sawant", role: "Vice Chairman", imgSrc: "./img/people/p1.png", linkedin: "#" },
         { name: "Shri. Sachin Vijay Chorge", role: "Secretary", imgSrc: "./img/people/p1.png", linkedin: "#" },
