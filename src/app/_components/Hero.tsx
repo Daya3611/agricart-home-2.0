@@ -8,7 +8,7 @@ function Hero() {
         
         {/* Logo Image */}
         <div className="flex justify-center md:justify-start">
-          <img src="./img/logo.png" alt="Logo" className="w-100 md:w-100" />
+          <img src="./img/logo.png" alt="Agricart Farmers Producer Company" className="w-100 md:w-100" loading='lazy' />
         </div>
 
         {/* Main Content */}
@@ -35,8 +35,8 @@ function Hero() {
           </p>
 
           {/* Explore Button */}
-          <a href="#about" className="inline-flex gap-2 items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-2xl hover:bg-green-600 transition duration-300 ease-in-out hover:ring-4 hover:ring-green-500">
-            Explore
+          <a href="/about" className="inline-flex gap-2 items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-2xl hover:bg-green-600 transition duration-300 ease-in-out hover:ring-4 hover:ring-green-500">
+            Know more about us
             <ArrowUpRight/>
           </a>
         </div>
