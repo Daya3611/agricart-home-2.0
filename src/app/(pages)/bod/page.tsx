@@ -1,18 +1,78 @@
 import React from 'react'
 
 const director = [
-        { name: "Shri. Santosh Ankush Gawade", role: "Chairman", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Vinod Shivram Sawant", role: "Vice Chairman", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Sachin Vijay Chorge", role: "Secretary", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Sandeep Atmaram Dhawale", role: "Secretary, Milk Department", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Darshana Dilip Palav", role: "Director", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Nhanu Pandurang Palav", role: "HOD, Milk Department", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Sunil Chandrakant Kadam", role: "", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Uma Mahadev Palav", role: "", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Sharad Ganpat Dhuri", role: "", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Kailas Digambar Dhawale", role: "", imgSrc: "./img/people/p1.png", linkedin: "#" },
-        { name: "Shri. Sandip Ankush Gawade", role: "Hon. Consultant", imgSrc: "./img/people/sandip_gawade.jpg", linkedin: "#" },
-        { name: "Shri. Ajay Vijay Chavan", role: "CEO", imgSrc: "./img/people/p1.png", linkedin: "#" }
+        { 
+          name: "Shri. Santosh Ankush Gawade",
+          role: "Chairman",
+          imgSrc: "./img/people/p1.png",
+          linkedin: "#"
+         },
+
+        { 
+          name: "Shri. Vinod Shivram Sawant", 
+          role: "Vice Chairman", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+
+        { 
+          name: "Shri. Sachin Vijay Chorge", 
+          role: "Secretary", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+        { 
+          name: "Shri. Sandeep Atmaram Dhawale", 
+          role: "Secretary, Milk Department", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+        { 
+          name: "Shri. Darshana Dilip Palav", 
+          role: "Director", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+        { 
+          name: "Shri. Nhanu Pandurang Palav", 
+          role: "HOD, Milk Department", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+        { name: "Shri. Sunil Chandrakant Kadam", 
+          role: "", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+        { name: "Shri. Uma Mahadev Palav", 
+          role: "", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#"
+        },
+        { 
+          name: "Shri. Sharad Ganpat Dhuri", 
+          role: "", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+        { 
+          name: "Shri. Kailas Digambar Dhawale", 
+          role: "", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
+        { 
+          name: "Shri. Sandip Ankush Gawade", 
+          role: "Hon. Consultant", 
+          imgSrc: "./img/people/sandip_gawade.jpg", 
+          linkedin: "#" 
+        },
+        { 
+          name: "Shri. Ajay Vijay Chavan", 
+          role: "CEO", 
+          imgSrc: "./img/people/p1.png", 
+          linkedin: "#" 
+        },
 ]
 
 export default function page() {
