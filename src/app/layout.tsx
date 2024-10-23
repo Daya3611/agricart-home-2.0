@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className={bricolage_grotesque.className}>
-      {/* <Header/>
+      <Header/>
         {children}
-      <Footer/> */}
-        <h1 className="text-center">This site is temporarily unavailable. Please check back later.</h1>
+      <Footer/>
+        {/* <h1 className="text-center">This site is temporarily unavailable. Please check back later.</h1> */}
       </body>
     </html>
   );
