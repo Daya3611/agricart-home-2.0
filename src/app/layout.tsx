@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import Preloader from "./Loder/Preloder";
+import { Toaster } from "@/components/ui/sonner";
 
 const bricolage_grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className={bricolage_grotesque.className}>
+        <Toaster/>
         <Preloader/>
       <Header/>
         {children}

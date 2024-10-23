@@ -1,4 +1,7 @@
+"use client"
+import { InfoIcon, LinkedinIcon } from 'lucide-react';
 import React from 'react'
+import { toast } from 'sonner';
 
 const staff = [
     {
@@ -33,35 +36,62 @@ const staff = [
     }
   ];
 
+  const btn = () =>{
+    toast("Details Not Available")
+  }
   
 function page() {
   return (
-    <div className="py-12 px-6 bg-white mt-10 ">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-gray-900">Board of Directors</h1>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        {staff.map((member, index) => (
-          <div key={index} className="bg-gray-50 p-6 rounded-3xl shadow-md transition-transform transform hover:scale-105 hover:shadow-xl">
-            <div className="relative w-24 h-24 mb-6 mx-auto rounded-full overflow-hidden border-2 border-gray-300">
-              <img src={member.imageSrc} alt={member.name} className="w-full h-full object-cover" />
+    <section className="py-20 px-10 bg-white">
+        <div className="text-center mb-16">
+                <h1 className="text-4xl font-bold text-gray-900"><strong>Staff</strong></h1>
             </div>
-            <div className="text-center">
-              {/* <a href={member.linkedin} className="text-gray-600 hover:text-gray-900 flex items-center justify-center mb-4 transition-colors duration-300">
-                <i className="fa fa-linkedin text-2xl mr-2" aria-hidden="true"></i>
-                <span className="font-medium">View Profile</span>
-              </a> */}
-              <h3 className="text-xl font-semibold text-gray-800 mb-1">{member.name}</h3>
-              <h4 className="text-md font-medium text-gray-600 mb-4">{member.role}</h4>
-              <a href={member.linkedin} className="text-green-600 hover:text-gray-900 flex items-center justify-center transition-colors duration-300">
-                <span className="mr-2">More Info</span>
-                <i className="fa fa-arrow-right text-lg" aria-hidden="true"></i>
-              </a>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                {staff.map((member, index) => (
+                <div
+                    key={index}
+                    className="bg-white p-4 rounded-xl border shadow-md hover:shadow-xl transition-shadow duration-300"
+                >
+                    {/* Image Section */}
+                    <div className="relative w-full h-60 mb-6 mx-auto rounded-2xl overflow-hidden">
+                    <img
+                        src={member.imageSrc}
+                        alt={member.name}
+                        className="w-full h-full object-fill"
+                    />
+                    </div>
+
+                    {/* Name and Title */}
+                    <div className="text-left">
+                    <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                        {member.name}
+                    </h3>
+                    <h4 className="text-sm font-medium text-gray-600 mb-4">
+                        {member.role}
+                    </h4>
+                    </div>
+
+                    {/* Action Icons */}
+                    <div className="text-center flex">
+                    <a
+                        href={member.linkedin}
+                        className="text-gray-500 hover:text-gray-800 mx-2 transition-colors duration-200"
+                        onClick={()=> btn()}
+                    >
+                        <InfoIcon/>
+                    </a>
+                    <a
+                        href={member.linkedin}
+                        className="text-gray-500 hover:text-blue-600 mx-2 transition-colors duration-200"
+                        onClick={()=> btn()}
+                    >
+                        <LinkedinIcon/>
+                    </a>
+                    </div>
+                </div>
+                ))}
             </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   )
 }
 

@@ -3,8 +3,8 @@ import React from 'react'
 function page() {
   return (
     <div className="p-8 bg-white mt-[50px]">
-      <div className="max-w-6xl mx-auto p-6 bg-white border rounded-3xl">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-8 border-b-4 border-teal-500 pb-2">Introduction</h1>
+      <div className="max-w-6xl mx-auto p-6 bg-gray-50 border rounded-3xl">
+        <h1 className="text-4xl font-extrabold text-gray-900 mb-8 border-b-4 border-teal-500 pb-2 w-full">Introduction</h1>
         
         {/* <table className="w-full mb-8 border-separate border-spacing-6">
           <tbody>
