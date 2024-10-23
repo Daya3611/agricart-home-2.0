@@ -71,7 +71,7 @@ function Contact() {
                         <div className="h-captcha" data-captcha="true"></div>
                     </div>
 
-                    <button className="flex items-center justify-center py-3 px-6 bg-green-600 text-white rounded-lg hover:bg-green-600 transition" type="submit" id="submit">
+                    <button className="flex items-center justify-center py-3 px-6 bg-green-600 text-white rounded-lg hover:bg-green-600 transition duration-300 ease-in-out hover:ring-4 hover:ring-green-500" type="submit" id="submit">
                         Send Message
                         <i className="ri-arrow-right-up-line text-xl ml-2"></i>
                     </button>

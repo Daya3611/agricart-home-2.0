@@ -1,7 +1,7 @@
 "use client";
-
+import { motion, useInView } from "framer-motion";
 import { X } from 'lucide-react';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 // Define image URLs and detailsdddd
 const events = [
@@ -171,60 +171,95 @@ const events = [
   
 ];
 
+const div = {
+  hidden: { opacity: 0, scale: 0.8 }, // Set initial state
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+
+
 const Page = () => {
-  const [popupData, setPopupData] = useState<{ img: string; name: string; description: string } | null>(null);
-  
-  const openPopup = (event: { img: string; name: string; description: string }) => setPopupData(event);
+  interface Event {
+    img: string;
+    name: string;
+    description: string;
+  }
+
+  const [popupData, setPopupData] = useState<Event | null>(null);
+
+  const openPopup = (event: Event) => setPopupData(event);
   const closePopup = () => setPopupData(null);
 
   return (
     <section className="container mx-auto px-4 py-8 mt-10">
-      <h1 className="text-5xl font-bold text-center mb-6 sm:text-2xl md:text-3xl">Our Gallery</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 sm:text-2xl md:text-6xl text-green-700">Our Gallery</h1>
 
-      <div className="grid grid-cols-1  lg:grid-cols-4 gap-4 mb-6 mt-3">
+      {/* Animated Gallery */}
+      <motion.div
+        className="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-6 mt-3"
+        variants={div}
+        initial="hidden"
+        animate="visible"
+      >
         {events.map((event, index) => (
-          <div key={index} className="relative cursor-pointer border-[10px] rounded-3xl border-white shadow-lg shadow-gray-400">
+          <motion.div
+            key={index}
+            className="relative cursor-pointer border-[10px] rounded-3xl hover:border-green-600 hover:bg-green-600 border-white shadow-lg shadow-gray-400"
+            variants={item}
+          >
             <img
               src={event.img}
-              alt={`Gallery ${index + 1}`}
+              alt={event.name} // Better accessibility
               className="w-full h-48 object-cover rounded-3xl"
               onClick={() => openPopup(event)}
             />
-          </div>
+          </motion.div>
         ))}
-      </div>
-
-      {/* <div className="text-center">
-        <a
-          href="gallery.html"
-          className="inline-flex items-center px-4 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300"
-        >
-          Explore More Photos
-          <i className="ri-arrow-right-down-line ml-2"></i>
-        </a>
-      </div> */}
+      </motion.div>
 
       {/* Popup */}
       {popupData && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
-          <div className="relative bg-white p-4 rounded-3xl w-full max-w-lg sm:max-w-md md:max-w-lg">
-            <button
-              onClick={closePopup}
-              className="absolute top-2 right-2 "
-            >
-              <X className='text-[50px] font-bold text-white bg-black rounded-full'/>
+        <motion.div
+          className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div
+            className="relative bg-white p-4 rounded-3xl w-full max-w-lg sm:max-w-md md:max-w-lg"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <button onClick={closePopup} className="absolute top-2 right-2">
+              <X className='text-[50px] font-bold text-white bg-black rounded-full' />
             </button>
             <img
               src={popupData.img}
-              alt="Popup"
+              alt={popupData.name} // More descriptive alt text
               className="w-full h-auto max-w-full max-h-[80vh] object-fill rounded-3xl"
             />
             <div className="mt-4">
               <h2 className='text-xl font-bold'>{popupData.name}</h2>
               <p className='mt-2 text-sm text-gray-700'>{popupData.description}</p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </section>
   );

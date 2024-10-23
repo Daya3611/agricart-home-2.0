@@ -75,7 +75,7 @@ const Gallery = () => {
       <div className="text-center pt-5">
         <a
           href="allevents"
-          className="inline-flex items-center px-4 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300"
+          className="inline-flex items-center px-4 py-2 h-[45px] bg-green-600 text-white font-semibold rounded-2xl hover:bg-green-600 transition duration-300 ease-in-out hover:ring-4 hover:ring-green-500"
         >
           Explore More Photos
           <ArrowUpRight/>

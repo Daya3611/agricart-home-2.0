@@ -35,7 +35,7 @@ function Hero() {
           </p>
 
           {/* Explore Button */}
-          <a href="#about" className="inline-flex gap-2 items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300 ease-in-out">
+          <a href="#about" className="inline-flex gap-2 items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-2xl hover:bg-green-600 transition duration-300 ease-in-out hover:ring-4 hover:ring-green-500">
             Explore
             <ArrowUpRight/>
           </a>

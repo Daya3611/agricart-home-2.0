@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../_components/Contact'
+import Contact from '../../_components/Contact'
 
 function page() {
   return (

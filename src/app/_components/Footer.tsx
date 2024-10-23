@@ -6,7 +6,7 @@ function Footer() {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 <div className="space-y-6">
                     <a href="#" className="text-3xl font-bold flex items-center space-x-2">
-                        <span>Agricat</span>
+                        <span>Agricart</span>
                         <div className='h-2 w-2 bg-green-600 rounded-full mt-4 animate-pulse'>
                             <span className='h-2 w-2 bg-green-600 rounded-full mt-4'></span>
                         </div>
@@ -59,7 +59,7 @@ function Footer() {
             </div>
 
             <p className="text-center text-sm text-black mt-8">
-                &#169; <strong>Agricart Farmers Producer Company Limited</strong>  | Design & Develop by <a href="https://dayanandgawadein/" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">Dayanand Gawade</a>.
+                &#169; <strong>Agricart Farmers Producer Company Limited</strong>  | Design & Develop by <a href="https://dayanandgawade.in" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">Dayanand Gawade</a>.
             </p>
         </div>
   )

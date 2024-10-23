@@ -1,6 +1,6 @@
 import React from 'react'
 
-const director = [
+export const director = [
         { name: "Shri. Santosh Ankush Gawade", role: "Chairman", imgSrc: "./img/people/p1.png", linkedin: "#" },
         { name: "Shri. Vinod Shivram Sawant", role: "Vice Chairman", imgSrc: "./img/people/p1.png", linkedin: "#" },
         { name: "Shri. Sachin Vijay Chorge", role: "Secretary", imgSrc: "./img/people/p1.png", linkedin: "#" },
@@ -14,7 +14,8 @@ const director = [
         { name: "Shri. Sandip Ankush Gawade", role: "Hon. Consultant", imgSrc: "./img/people/sandip_gawade.jpg", linkedin: "#" },
         { name: "Shri. Ajay Vijay Chavan", role: "CEO", imgSrc: "./img/people/p1.png", linkedin: "#" }
 ]
-function page() {
+
+export default function page() {
   return (
     <div className="py-12 px-6 bg-white mt-8">
       <div className="text-center mb-12">
@@ -45,4 +46,4 @@ function page() {
   )
 }
 
-export default page
+

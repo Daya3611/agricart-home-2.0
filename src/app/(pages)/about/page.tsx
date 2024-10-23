@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div className="p-6 bg-white mt-[60px] ">
-      <div className="bg-gray-50 shadow-lg rounded-3xl p-6">
+      <div className="bg-gray-50 border rounded-3xl p-6">
       <h1 className="text-2xl font-bold mb-4 border-b-4 border-teal-500 pb-2">About Us</h1>
           <p className="mb-4 text-justify">
             Agricart Farmers Producer Company Limited &reg;, registered in 2019, is working with 500 farmers and traditional seed savers in District Sindhudurg of State Maharashtra. The prime motive of the Farmer Organisation is to conserve traditional seeds, farm practices, recipes, and other traditional knowledge through public participation in a sustainable way. The organisation ensures direct monetary benefits to the farmers, encouraging them to conserve their precious traditional knowledge.
