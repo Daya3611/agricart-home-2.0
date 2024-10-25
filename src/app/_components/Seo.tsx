@@ -16,7 +16,13 @@ const keywords = [
     },
     {
         word:'agrikart'
-    }
+    },
+    {
+        word:'agricart maharashtra'
+    },
+    {
+        word:'agricart maharashtra seed bank'
+    },
 ]
 export default function Seo() {
   return (
