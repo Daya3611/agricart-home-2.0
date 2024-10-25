@@ -3,7 +3,7 @@ import React from 'react';
 
 function Contact() {
     return (
-        <div className="container mx-auto py-12 px-4" id="contact">
+        <section className="container mx-auto py-12 px-4" id="contact">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="bg-white p-6 rounded-lg ">
                     <h2 className="text-2xl font-bold mb-6">
@@ -78,7 +78,7 @@ function Contact() {
                 </form>
             </div>
             <script src="https://web3forms.com/client/script.js" async defer></script>
-        </div>
+        </section>
     );
 }
 

@@ -35,7 +35,7 @@ const products = [
 
 function Product() {
   return (
-    <div className="container mx-auto py-12 px-4" id="products">
+    <section className="container mx-auto py-12 px-4" id="products">
         <h2 className="text-3xl font-bold text-center mb-6">
             Check out our <br /> products
         </h2>
@@ -80,7 +80,7 @@ function Product() {
                 </article>
             ))}
         </div>
-    </div>
+    </section>
 
   )
 }

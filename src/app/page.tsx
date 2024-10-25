@@ -6,6 +6,7 @@ import Slider from "./_components/Slider";
 import Gallary from "./_components/Gallary";
 import Product from "./_components/Product";
 import Contact from "./_components/Contact";
+import Seo from "./_components/Seo";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Gallary/>
       <Product/>
       <Contact/>
+      <Seo/>
     </div>
   );
 }

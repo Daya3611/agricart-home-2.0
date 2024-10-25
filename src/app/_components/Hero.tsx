@@ -3,7 +3,7 @@ import React from 'react';
 
 function Hero() {
   return (
-    <div className="bg-white py-12 mt-8">
+    <section className="bg-white py-12 mt-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
         {/* Logo Image */}
@@ -57,7 +57,7 @@ function Hero() {
           </div>
         </div> */}
       </div>
-    </div>
+    </section>
   );
 }
 

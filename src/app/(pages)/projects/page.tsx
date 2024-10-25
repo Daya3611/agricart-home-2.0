@@ -36,18 +36,18 @@ const highlights = [
   ];
 function page() {
   return (
-    <section className="py-16 bg-gray-50 mt-9" id="faqs">
-    <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+    <section className="py-16 bg-white mt-9" id="faqs">
+    <h2 className="text-5xl font-bold text-center mb-12 text-gray-900">
       Project Highlights
     </h2>
 
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {highlights.map((highlight, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div key={index} className="bg-green-50 rounded-lg border border-green-600  shadow-sms overflow-hidden">
             <header className="bg-green-600 text-white p-4 flex items-center">
               <i className="ri-add-line text-xl mr-3"></i>
-              <h3 className="text-xl font-semibold">{highlight.title}</h3>
+              <strong className="text-xl font-semibold">{highlight.title}</strong>
             </header>
             <div className="p-6">
               <p className="text-gray-700 text-justify">
@@ -61,10 +61,10 @@ function page() {
 
     <div className="text-center mt-16 px-4 ">
       <p className="text-gray-700">
-        <b className="font-semibold">Project Support</b><br />
-        BAIF Institute for Sustainable Livelihood and Development (BISLD), Pune<br /><br />
-        <b className="font-semibold">Funded By</b><br />
-        Rajiv Gandhi Science and Technology Commission, Government of Maharashtra
+        <b className="font-semibold text-green-600">Project Support</b><br />
+        <p className='italic -mb-8'>BAIF Institute for Sustainable Livelihood and Development (BISLD), Pune</p><br /><br />
+        <b className="font-semibold text-green-600">Funded By</b><br />
+        <p className='italic'>Rajiv Gandhi Science and Technology Commission, Government of Maharashtra</p>
       </p>
     </div>
   </section>

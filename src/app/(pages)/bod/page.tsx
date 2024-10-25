@@ -87,7 +87,7 @@ export default function page() {
   return (
     <section className="py-20 px-10 bg-white">
         <div className="text-center mb-16">
-                <h1 className="text-4xl font-bold text-gray-900"><strong>Board of Directors</strong></h1>
+                <h1 className="text-5xl font-bold text-green-700"><strong>Board of Directors</strong></h1>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
                 {director.map((member, index) => (
@@ -107,9 +107,9 @@ export default function page() {
                     {/* Name and Title */}
                     <div className="text-left">
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">
-                        {member.name}
+                        <strong>{member.name}</strong>
                     </h3>
-                    <h4 className="text-sm font-medium text-gray-600 mb-4">
+                    <h4 className="text-sm font-medium text-green-600 mb-4">
                         {member.role}
                     </h4>
                     </div>
