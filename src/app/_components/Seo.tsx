@@ -119,7 +119,7 @@ export default function Seo() {
     <article>
       <div className='text-transparent text-[0px]'>
         {keywords.map((keyword, index) => (
-            <strong>{keyword.word}</strong>
+            <strong key={index}>{keyword.word}</strong>
         ))}
       </div>
     </article>
