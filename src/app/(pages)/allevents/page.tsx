@@ -194,7 +194,7 @@ const item = {
 
 
 
-const Page = () => {
+const page = () => {
   interface Event {
     img: string;
     name: string;
@@ -268,4 +268,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
