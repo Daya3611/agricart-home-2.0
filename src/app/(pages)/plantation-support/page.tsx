@@ -182,10 +182,7 @@ export default function PlantationSupportPage() {
                 </p>
               </div>
 
-              {/* Price pill */}
-              <div className="bg-white border border-green-200 text-green-700 font-bold px-6 py-2.5 rounded-full text-base shadow-sm">
-                🌱 One Sapling = ₹25
-              </div>
+             
 
               <DonateButton large />
 
