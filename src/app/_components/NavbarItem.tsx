@@ -257,6 +257,19 @@ function NavbarItem() {
            
                 <Collapsible>
                     <CollapsibleTrigger className="w-full bg-white   rounded-lg text-gray-800 hover:text-green-600  transition duration-300 ease-in-out py-3 px-4 text-left">
+                    <Link href='/plantation-support' className='flex gap-3 text-lg  font-bold'>
+                    Plantation Support   
+                    </Link>
+                    </CollapsibleTrigger>
+                    
+                </Collapsible>
+           
+      </div>
+
+      <div className=" max-w-2xl mx-auto">
+           
+                <Collapsible>
+                    <CollapsibleTrigger className="w-full bg-white   rounded-lg text-gray-800 hover:text-green-600  transition duration-300 ease-in-out py-3 px-4 text-left">
                     <Link href='/contact' className='flex gap-3 text-lg  font-bold'>
                     Contact Us   
                     </Link>
