@@ -48,8 +48,8 @@ import Image from 'next/image';
 //     name: 'Event 8',
 //     description: 'Event 8 description',
 //   },
-  
-  
+
+
 // ];
 
 const Gallery = () => {
@@ -63,15 +63,16 @@ const Gallery = () => {
       <h1 className="text-5xl font-bold text-center mb-6 ">Our Gallery</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-6 mt-3">
-        {events.slice(0,16).map((event, index) => (
-          <div key={index} className="relative cursor-pointer border-[10px] rounded-3xl border-white shadow-lg shadow-gray-400">
+        {events.slice(0, 8).map((event, index) => (
+          <div key={index} className="relative cursor-pointer border-[10px] rounded-3xl border-white shadow-lg shadow-gray-400 transform hover:rotate-[4deg] transition-all duration-300">
             <Image
               src={event.img}
               alt={`Gallery ${index + 1}`}
               width={500}
               height={48}
-              className="w-full h-48 object-cover rounded-3xl hover:rotate-12 transition-all"
+              className="w-full h-48 object-cover rounded-3xl"
               onClick={() => openPopup(event)}
+              loading='lazy'
             />
           </div>
         ))}
@@ -83,7 +84,7 @@ const Gallery = () => {
           className="inline-flex items-center px-4 py-2 h-[45px] bg-green-600 text-white font-semibold rounded-2xl hover:bg-green-600 transition duration-300 ease-in-out hover:ring-4 hover:ring-green-500"
         >
           Explore More Photos
-          <ArrowUpRight/>
+          <ArrowUpRight />
         </a>
       </div>
 
@@ -95,7 +96,7 @@ const Gallery = () => {
               onClick={closePopup}
               className="absolute top-2 right-2 "
             >
-              <X className='text-[50px] font-bold text-white bg-black rounded-full'/>
+              <X className='text-[50px] font-bold text-white bg-black rounded-full' />
             </button>
             <img
               src={popupData.img}
@@ -111,8 +112,8 @@ const Gallery = () => {
       )}
     </section>
 
-    
-    
+
+
 
   );
 };

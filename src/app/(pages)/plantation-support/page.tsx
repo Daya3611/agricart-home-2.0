@@ -282,23 +282,7 @@ export default function PlantationSupportPage() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════════════
-          FOOTER
-      ══════════════════════════════════════════════════════ */}
-      <footer className="border-t border-slate-100 py-10 text-center bg-white">
-        <div className="container mx-auto px-5 space-y-4">
-          <p className="text-2xl">🌿</p>
-          <p className="text-slate-600 font-medium text-base max-w-md mx-auto leading-relaxed">
-            &ldquo;Together we can build a greener Konkan and prosperous farmers.&rdquo;
-          </p>
-          <div className="pt-2">
-            <DonateButton />
-          </div>
-          <p className="text-xs text-slate-400 pt-4">
-            © {new Date().getFullYear()} Agricart Shetkari Utpadak Gat, Pandur, Kudal, Sindhudurg.
-          </p>
-        </div>
-      </footer>
+
 
     </div>
   );

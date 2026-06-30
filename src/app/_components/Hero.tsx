@@ -1,61 +1,81 @@
-import { ArrowUpRight, Facebook, Instagram, InstagramIcon, Youtube } from 'lucide-react';
-import React from 'react';
+import React from "react";
+import { ArrowUpRight } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="bg-white py-12 mt-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
-        {/* Logo Image */}
-        <div className="flex justify-center md:justify-start">
-          <img src="./img/logo.png" alt="Agricart Farmers Producer Company" className="w-100 md:w-100" loading='lazy' />
-        </div>
+    <section className="relative bg-white pt-6 pb-16 overflow-hidden">
+      {/* Subtle background tint */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-green-50 rounded-full blur-3xl opacity-70" />
+        <div className="absolute bottom-0 -left-24 w-96 h-96 bg-emerald-50 rounded-full blur-3xl opacity-60" />
+      </div>
 
-        {/* Main Content */}
-        <div className="text-center md:text-left space-y-6">
-          {/* Development Notice */}
-          <div className="text-sm text-gray-600 bg-yellow-100 p-2 rounded-md">
-            This Website is under Development. Some features may not be Available / Work now.
+      <div className="relative max-w-6xl mx-auto px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+          {/* Logo */}
+          <div className="flex justify-center md:justify-start">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-green-50 rounded-3xl blur-xl opacity-60" />
+              <img
+                src="./img/logo.png"
+                alt="Agricart Farmers Producer Company"
+                className="relative w-72 md:w-80 lg:w-96 drop-shadow-sm rounded-full"
+                loading="lazy"
+              />
+            </div>
           </div>
 
-          {/* Title and Slogan */}
-          <h1 className="text-3xl md:text-4xl font-bold text-green-700">
-            <strong>
-            <span className="block text-5xl md:text-5xl">Agricart</span>
-            <span className="block text-lg md:text-xl text-black ">Farmers Producer Company Limited</span>
-            </strong>
-            
-            <br />
-            <img src="./img/slogen.png" alt="Slogan" className="mx-auto md:mx-0 w-[250px]  mt-2 sm:w-full md:w-[350px]" />
-          </h1>
+          {/* Content */}
+          <div className="text-center md:text-left space-y-6">
+            {/* Under construction notice */}
+            <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-800 text-xs font-medium px-3 py-1.5 rounded-full">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+              Website is under development — some features may be unavailable.
+            </div>
 
-          {/* Description */}
-          <p className="text-lg text-gray-700">
-            <strong>Agricart Farmers Producer Company </strong> working with 500+ farmers to conserve traditional seeds & recipes.
-          </p>
+            {/* Title */}
+            <div className="space-y-1">
+              <h1 className="text-5xl md:text-6xl font-extrabold text-green-600 tracking-tight leading-none">
+                Agricart
+              </h1>
+              <p className="text-lg md:text-xl font-semibold text-slate-800">
+                Farmers Producer Company Limited
+              </p>
+            </div>
 
-          {/* Explore Button */}
-          <a href="/about" className="inline-flex gap-2 items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-2xl hover:bg-green-600 transition duration-300 ease-in-out hover:ring-4 hover:ring-green-500">
-            Know more about us
-            <ArrowUpRight/>
-          </a>
-        </div>
+            {/* Slogan image */}
+            <img
+              src="./img/slogen.png"
+              alt="Slogan"
+              className="mx-auto md:mx-0 w-[220px] md:w-[280px]"
+            />
 
-        {/* Social Links */}
-        {/* <div className="text-center md:text-right space-y-4">
-          <span className="block text-gray-800 font-semibold">Follow Us</span>
-          <div className="flex justify-center md:justify-end space-x-4">
-            <a href="https://www.facebook.com/profile.php?id=100083819993056&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
-              <i className="ri-facebook-fill text-2xl"><Facebook/></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition duration-300 ease-in-out">
-              <i className="ri-instagram-line text-2xl"><Instagram/></i>
-            </a>
-            <a href="https://youtube.com/@agricartfpcltd5583?si=UNP3zw6_u_4eezMQ" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-800 transition duration-300 ease-in-out">
-              <i className="ri-youtube-fill text-2xl"><Youtube/></i>
-            </a>
+            {/* Description */}
+            <p className="text-slate-600 text-base leading-relaxed max-w-md mx-auto md:mx-0">
+              Working with{" "}
+              <strong className="text-slate-800 font-semibold">500+ farmers</strong> to
+              conserve traditional seeds and recipes across the Konkan region.
+            </p>
+
+            {/* CTA */}
+            <div className="flex flex-wrap items-center gap-3 justify-center md:justify-start">
+              <a
+                href="/about"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full shadow-sm shadow-green-200 transition-all active:scale-95 text-sm"
+              >
+                Know More About Us
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+              <a
+                href="/plantation-support"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-slate-200 text-slate-700 hover:border-green-300 hover:text-green-700 hover:bg-green-50 font-semibold rounded-full transition-all text-sm"
+              >
+                Plantation Support
+              </a>
+            </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

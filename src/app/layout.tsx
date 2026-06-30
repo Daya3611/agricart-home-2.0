@@ -14,6 +14,11 @@ const bricolage_grotesque = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "Agricart",
   description: "Agricart Farmers Producer Company Limited",
+  icons: {
+    icon: "/img/favicon.png",
+    shortcut: "/img/favicon.png",
+    apple: "/img/favicon.png",
+  },
 };
 
 export default function RootLayout({
