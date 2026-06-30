@@ -18,7 +18,7 @@ export function CommunityImpact({ donations, sponsorAmount = 0 }: CommunityImpac
   const totalDonors = donations.length;
   const totalTrees = Math.floor(totalAmount / 25);
   const totalBeneficiaries = Math.floor(totalAmount / 800);
-  const totalArea = totalAmount / 500;
+  const totalArea = totalAmount / 5000;
 
   const stats = [
     {

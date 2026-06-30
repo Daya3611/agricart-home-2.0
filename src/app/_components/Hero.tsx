@@ -29,10 +29,10 @@ function Hero() {
           {/* Content */}
           <div className="text-center md:text-left space-y-6">
             {/* Under construction notice */}
-            <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-800 text-xs font-medium px-3 py-1.5 rounded-full">
+            {/* <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-800 text-xs font-medium px-3 py-1.5 rounded-full">
               <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
               Website is under development — some features may be unavailable.
-            </div>
+            </div> */}
 
             {/* Title */}
             <div className="space-y-1">

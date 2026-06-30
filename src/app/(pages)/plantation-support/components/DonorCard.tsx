@@ -44,7 +44,7 @@ const impactItems = (amount: number) => [
   },
   {
     icon: Layers,
-    value: amount / 500,
+    value: amount / 5000,
     decimals: 2,
     label: "Acres",
     color: "text-amber-600",
