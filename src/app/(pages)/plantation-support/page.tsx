@@ -122,6 +122,11 @@ export default function PlantationSupportPage() {
               <DonateButton large />
             </motion.div>
 
+            {/* LIVE DONOR WALL */}
+            <motion.div {...fadeUp(0.23)} className="w-full max-w-5xl mx-auto text-left relative z-10 mt-8 mb-4">
+              <LiveDonorWall />
+            </motion.div>
+
             {/* Poster image */}
             <motion.div {...fadeUp(0.26)}
               className="w-full max-w-sm sm:max-w-md relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200 border border-slate-100 mt-2">
@@ -192,18 +197,6 @@ export default function PlantationSupportPage() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════════════
-          LIVE DONOR WALL
-      ══════════════════════════════════════════════════════ */}
-      <section className="py-20 bg-slate-50/50 relative border-t border-slate-100 overflow-hidden">
-        {/* Decorative background blur */}
-        <div className="absolute top-40 -left-40 w-96 h-96 bg-green-50/80 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 right-0 w-80 h-80 bg-emerald-50/80 rounded-full blur-3xl pointer-events-none" />
-        
-        <div className="container mx-auto px-5 max-w-5xl relative z-10">
-          <LiveDonorWall />
-        </div>
-      </section>
 
       {/* ══════════════════════════════════════════════════════
           PROPOSED SAPLINGS
