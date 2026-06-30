@@ -33,7 +33,7 @@ function Footer() {
               />
             </div>
             <p className="text-sm text-slate-500 leading-relaxed">
-              Farmers Producer Company Limited — empowering 500+ farmers across Konkan to conserve
+              Farmers Producer Company Limited. empowering 500+ farmers across Konkan to conserve
               traditional seeds and build sustainable livelihoods.
             </p>
             <a
