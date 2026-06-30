@@ -99,7 +99,7 @@ export function LiveDonorWall() {
 
     setPreviousIds(currentIds);
     prevAmountRef.current = currentAmount;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [donations]);
 
   const isReachingEnd =
@@ -146,30 +146,65 @@ export function LiveDonorWall() {
         </div>
       ) : (
         <>
+          {/* ── Principal Sponsor Banner ── */}
+          <div className="mb-8 rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white overflow-hidden shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 px-6 py-5">
+              <div className="flex items-center gap-4">
+                {/* Logo placeholder / icon */}
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-600 flex items-center justify-center shadow-sm">
+                  <span className="text-white text-lg font-black tracking-tight">B</span>
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mb-0.5">
+                    Principal Sponsor
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 leading-snug">
+                    BAIF-TERI SGP OP7 Project (25-26)
+                  </h3>
+                  <p className="text-xs text-slate-500 mt-0.5">
+                    Supporting sustainable plantation & rural livelihoods
+                  </p>
+                </div>
+              </div>
+              <div className="flex-shrink-0 text-left sm:text-right">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 mb-0.5">
+                  Grant Amount
+                </p>
+                <p className="text-2xl font-extrabold text-emerald-700 tabular-nums leading-none">
+                  ₹ 1,25,000
+                </p>
+              </div>
+            </div>
+
+          </div>
+
           {/* ── Community Impact ── */}
-          {donations.length > 0 && <CommunityImpact donations={donations} />}
+          {donations.length > 0 && (
+            <CommunityImpact donations={donations} sponsorAmount={125000} />
+          )}
+
 
           {/* ── Donor Cards Grid ── */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
             <AnimatePresence mode="popLayout">
               {isLoading && !data
                 ? Array.from({ length: 6 }).map((_, i) => (
-                    <motion.div
-                      key={`skeleton-${i}`}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                    >
-                      <DonorSkeleton />
-                    </motion.div>
-                  ))
+                  <motion.div
+                    key={`skeleton-${i}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <DonorSkeleton />
+                  </motion.div>
+                ))
                 : donations.map((donation) => (
-                    <DonorCard
-                      key={donation.id}
-                      donation={donation}
-                      isNew={newDonationIds.has(donation.id)}
-                    />
-                  ))}
+                  <DonorCard
+                    key={donation.id}
+                    donation={donation}
+                    isNew={newDonationIds.has(donation.id)}
+                  />
+                ))}
             </AnimatePresence>
           </div>
 

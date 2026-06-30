@@ -8,10 +8,13 @@ import { Donation } from "./types";
 
 interface CommunityImpactProps {
   donations: Donation[];
+  /** Extra amount from sponsors/grants to include in totals */
+  sponsorAmount?: number;
 }
 
-export function CommunityImpact({ donations }: CommunityImpactProps) {
-  const totalAmount = donations.reduce((sum, d) => sum + d.amount, 0);
+export function CommunityImpact({ donations, sponsorAmount = 0 }: CommunityImpactProps) {
+  const donationsAmount = donations.reduce((sum, d) => sum + d.amount, 0);
+  const totalAmount = donationsAmount + sponsorAmount;
   const totalDonors = donations.length;
   const totalTrees = Math.floor(totalAmount / 25);
   const totalBeneficiaries = Math.floor(totalAmount / 800);
@@ -75,7 +78,7 @@ export function CommunityImpact({ donations }: CommunityImpactProps) {
             Community Impact
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
-            Aggregated impact across all donations
+            Includes donations + BAIF-TERI SGP OP7 sponsor grant
           </p>
         </div>
         <span className="self-start sm:self-auto inline-flex items-center gap-2 text-[11px] font-semibold tracking-wide uppercase text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1">

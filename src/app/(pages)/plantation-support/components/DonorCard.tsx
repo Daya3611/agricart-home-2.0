@@ -78,11 +78,10 @@ export function DonorCard({ donation, isNew }: DonorCardProps) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.97 }}
       transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-      className={`group relative flex flex-col rounded-2xl bg-white overflow-hidden transition-all duration-300 ${
-        isNew
+      className={`group relative flex flex-col rounded-2xl bg-white overflow-hidden transition-all duration-300 ${isNew
           ? "ring-2 ring-emerald-400 shadow-lg shadow-emerald-100"
           : "border border-slate-200/80 shadow-sm hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-0.5"
-      }`}
+        }`}
     >
       {/* Animated glow overlay on new card */}
       {isNew && (
@@ -104,8 +103,7 @@ export function DonorCard({ donation, isNew }: DonorCardProps) {
         </div>
       )}
 
-      {/* ── Top accent bar ── */}
-      <div className={`h-1 w-full bg-gradient-to-r ${gradient} ${isNew ? "hidden" : ""}`} />
+
 
       <div className="relative z-10 flex flex-col flex-1 p-5">
 
