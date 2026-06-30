@@ -79,8 +79,8 @@ export function DonorCard({ donation, isNew }: DonorCardProps) {
       exit={{ opacity: 0, scale: 0.97 }}
       transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
       className={`group relative flex flex-col rounded-2xl bg-white overflow-hidden transition-all duration-300 ${isNew
-          ? "ring-2 ring-emerald-400 shadow-lg shadow-emerald-100"
-          : "border border-slate-200/80 shadow-sm hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-0.5"
+        ? "ring-2 ring-emerald-400 shadow-lg shadow-emerald-100"
+        : "border border-slate-200/80 shadow-sm hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-0.5"
         }`}
     >
       {/* Animated glow overlay on new card */}
@@ -130,7 +130,7 @@ export function DonorCard({ donation, isNew }: DonorCardProps) {
 
           {/* Amount — always in one line, no wrapping */}
           <div className="flex-shrink-0">
-            <div className="bg-emerald-600 text-white text-sm font-bold px-3 py-1.5 rounded-xl tabular-nums shadow-sm shadow-emerald-200 whitespace-nowrap">
+            <div className="bg-emerald-50 text-green-600  text-sm font-bold px-3 py-1.5 rounded-xl tabular-nums shadow-sm shadow-emerald-200 whitespace-nowrap">
               ₹ <CountUp value={donation.amount} />
             </div>
           </div>
