@@ -44,7 +44,8 @@ const impactItems = (amount: number) => [
   },
   {
     icon: Layers,
-    value: Math.floor(amount / 200),
+    value: amount / 500,
+    decimals: 2,
     label: "Acres",
     color: "text-amber-600",
     bg: "bg-amber-50",
@@ -161,7 +162,7 @@ export function DonorCard({ donation, isNew }: DonorCardProps) {
                   >
                     <Icon className={`w-4 h-4 ${item.color}`} strokeWidth={1.75} />
                     <span className={`text-[17px] font-extrabold tabular-nums leading-none ${item.color}`}>
-                      <CountUp value={item.value} />
+                      <CountUp value={item.value} decimals={item.decimals || 0} />
                     </span>
                     <span className="text-[9px] font-semibold uppercase tracking-widest text-slate-500">
                       {item.label}

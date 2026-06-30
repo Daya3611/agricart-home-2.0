@@ -8,12 +8,20 @@ interface CountUpProps {
   duration?: number;
   prefix?: string;
   suffix?: string;
+  decimals?: number;
 }
 
-export function CountUp({ value, duration = 1, prefix = "", suffix = "" }: CountUpProps) {
+export function CountUp({ value, duration = 1, prefix = "", suffix = "", decimals = 0 }: CountUpProps) {
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => {
-    return prefix + Math.floor(latest).toLocaleString("en-IN") + suffix;
+    // Round to specified decimals and format
+    const multiplier = Math.pow(10, decimals);
+    const num = Math.round(latest * multiplier) / multiplier;
+    
+    return prefix + num.toLocaleString("en-IN", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    }) + suffix;
   });
 
   useEffect(() => {

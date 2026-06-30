@@ -18,7 +18,7 @@ export function CommunityImpact({ donations, sponsorAmount = 0 }: CommunityImpac
   const totalDonors = donations.length;
   const totalTrees = Math.floor(totalAmount / 25);
   const totalBeneficiaries = Math.floor(totalAmount / 800);
-  const totalArea = Math.floor(totalAmount / 200);
+  const totalArea = totalAmount / 500;
 
   const stats = [
     {
@@ -61,6 +61,7 @@ export function CommunityImpact({ donations, sponsorAmount = 0 }: CommunityImpac
     {
       label: "Acres Covered",
       value: totalArea,
+      decimals: 2,
       icon: Layers,
       iconBg: "bg-amber-100",
       iconColor: "text-amber-700",
@@ -101,9 +102,8 @@ export function CommunityImpact({ donations, sponsorAmount = 0 }: CommunityImpac
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: i * 0.07 }}
-              className={`flex flex-col gap-3 p-5 border-slate-100 ${
-                !isLast ? "border-r" : ""
-              } border-b lg:border-b-0`}
+              className={`flex flex-col gap-3 p-5 border-slate-100 ${!isLast ? "border-r" : ""
+                } border-b lg:border-b-0`}
             >
               {/* Icon */}
               <div className={`w-9 h-9 rounded-xl ${stat.iconBg} flex items-center justify-center`}>
@@ -116,7 +116,7 @@ export function CommunityImpact({ donations, sponsorAmount = 0 }: CommunityImpac
                   {stat.prefix && (
                     <span className="text-base font-semibold mr-0.5">{stat.prefix}</span>
                   )}
-                  <CountUp value={stat.value} />
+                  <CountUp value={stat.value} decimals={(stat as any).decimals || 0} />
                 </p>
                 <p className="text-[11px] font-medium text-slate-500 mt-1.5">{stat.label}</p>
               </div>
