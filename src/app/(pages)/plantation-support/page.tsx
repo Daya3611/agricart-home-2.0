@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { LiveDonorWall } from "./components/LiveDonorWall";
 
 /* ── Animation helpers ──────────────────────────────── */
 const fadeUp = (delay = 0) => ({
@@ -188,6 +189,19 @@ export default function PlantationSupportPage() {
 
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════
+          LIVE DONOR WALL
+      ══════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-slate-50/50 relative border-t border-slate-100 overflow-hidden">
+        {/* Decorative background blur */}
+        <div className="absolute top-40 -left-40 w-96 h-96 bg-green-50/80 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 right-0 w-80 h-80 bg-emerald-50/80 rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="container mx-auto px-5 max-w-5xl relative z-10">
+          <LiveDonorWall />
         </div>
       </section>
 
