@@ -1,20 +1,34 @@
-import React from 'react';
+import React from "react";
 
 export function DonorSkeleton() {
   return (
-    <div className="bg-white/60 backdrop-blur-md rounded-2xl p-5 border border-slate-100 shadow-sm relative overflow-hidden h-[120px]">
-      <div className="absolute inset-0 -translate-x-full animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/50 to-transparent" />
-      <div className="flex items-start justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full bg-slate-200/80" />
-          <div className="space-y-2">
-            <div className="w-24 h-4 rounded-full bg-slate-200/80" />
-            <div className="w-16 h-3 rounded-full bg-slate-200/80" />
+    <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden animate-pulse">
+      {/* Top accent bar */}
+      <div className="h-1 w-full bg-slate-200" />
+
+      <div className="p-5 flex flex-col flex-1">
+        {/* Header row */}
+        <div className="flex items-center gap-3.5">
+          <div className="flex-shrink-0 w-11 h-11 rounded-full bg-slate-200" />
+          <div className="flex-1 space-y-2">
+            <div className="h-3.5 w-32 bg-slate-200 rounded" />
+            <div className="h-2.5 w-24 bg-slate-100 rounded" />
+          </div>
+          <div className="flex-shrink-0 w-16 h-8 bg-slate-200 rounded-xl" />
+        </div>
+
+        {/* Message */}
+        <div className="mt-4 h-10 bg-slate-100 rounded-lg" />
+
+        {/* Divider + impact */}
+        <div className="mt-5 pt-4 border-t border-slate-100">
+          <div className="flex gap-2">
+            <div className="flex-1 h-[72px] bg-slate-100 rounded-xl" />
+            <div className="flex-1 h-[72px] bg-slate-100 rounded-xl" />
+            <div className="flex-1 h-[72px] bg-slate-100 rounded-xl" />
           </div>
         </div>
-        <div className="w-20 h-6 rounded-full bg-slate-200/80" />
       </div>
-      <div className="mt-4 w-3/4 h-3 rounded-full bg-slate-200/80" />
     </div>
   );
 }

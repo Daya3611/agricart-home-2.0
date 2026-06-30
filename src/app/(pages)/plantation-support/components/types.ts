@@ -1,6 +1,6 @@
 export interface Donation {
   id: string;
-  donorName: string;
+  name: string;
   amount: number;
   currency: string;
   message?: string;
